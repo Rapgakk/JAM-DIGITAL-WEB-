@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    position: relative; /* Tetapkan posisi relatif untuk konten */
+    height: 100vh;
+    overflow: hidden; /* Sembunyikan gambar latar belakang yang berlebihan */
+}
+
+.background img {
+    position: absolute; /* Tetapkan posisi absolut untuk gambar latar belakang */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Atur agar gambar latar belakang mengisi area tanpa merubah aspeknya */
+    z-index: -1; /* Geser gambar latar belakang ke belakang */
+}
+
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.clock {
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 9px blue;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.day, .month, .year {
+    font-size: 2rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    margin: 0 10px;
+}
+
+.day-text, .month-text, .year-text {
+    font-size: 1rem; /* Ukuran teks yang lebih kecil untuk teks di bawah */
+    color: white; /* Warna teks */
+}
+
+.day-text, .month-text, .year-text {
+    margin-top: 5px; /* Jarak antara teks dan tanggal */
+}
+
+.indonesia-time {
+            font-size: 2rem; /* Atur ukuran teks "INDONESIA TIME" */
+		font-weight: bold;
+		border-bottom: 1px solid white; /* Tambahkan garis bawah */
+            padding-bottom: 5px; /* Berikan ruang di bawah teks */
+        }
